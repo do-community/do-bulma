@@ -4,7 +4,11 @@
   "description": "",
   "main": "src/style.scss",
   "scripts": {
-    "test": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc"
+    "test": "npm run lint && npm run build",
+    "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
+    "build": "npm run build:global && npm run build:style",
+    "build:global": "sass src/global.scss:build/global.css",
+    "build:style": "sass src/style.scss:build/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,7 @@
     "bulma": "^0.8.0"
   },
   "devDependencies": {
+    "sass": "^1.23.0",
     "sass-lint": "^1.13.1"
   }
 }
