@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MattIPv4/do-bulma.git"
+    "url": "git+https://github.com/do-community/do-bulma.git"
   },
   "author": "DigitalOcean",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/MattIPv4/do-bulma/issues"
+    "url": "https://github.com/do-community/do-bulma/issues"
   },
-  "homepage": "https://github.com/MattIPv4/do-bulma#readme",
+  "homepage": "https://github.com/do-community/do-bulma#readme",
   "dependencies": {
     "bulma": "^0.8.0"
   },
