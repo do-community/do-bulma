@@ -1,7 +1,7 @@
 {
   "name": "do-bulma",
   "version": "1.0.0",
-  "description": "",
+  "description": "Customized Bulma styling for DigitalOcean Community tools.",
   "main": "src/style.scss",
   "scripts": {
     "test": "npm run lint && npm run build",
