@@ -6,9 +6,7 @@
   "scripts": {
     "test": "npm run lint && npm run build",
     "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
-    "build": "npm run build:global && npm run build:style",
-    "build:global": "sass src/global.scss:build/global.css",
-    "build:style": "sass src/style.scss:build/style.css"
+    "build": "sass src/style.scss:build/style.css"
   },
   "repository": {
     "type": "git",

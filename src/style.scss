@@ -15,18 +15,24 @@ limitations under the License.
 */
 
 @import "globals/variables";
-@import "../node_modules/bulma/bulma";
-@import "components/base";
-@import "components/typography";
-@import "components/header";
-@import "components/landing";
-@import "components/github";
-@import "components/buttons";
-@import "components/forms";
-@import "components/tables";
-@import "components/footer";
-@import "components/modals";
-@import "components/message";
-@import "components/tags";
-@import "components/skeletons";
-@import "components/no-search";
+
+@import "globals/fonts";
+@import "globals/base";
+
+.do-bulma {
+  @import "../node_modules/bulma/bulma";
+  @import "components/base";
+  @import "components/typography";
+  @import "components/header";
+  @import "components/landing";
+  @import "components/github";
+  @import "components/buttons";
+  @import "components/forms";
+  @import "components/tables";
+  @import "components/footer";
+  @import "components/modals";
+  @import "components/message";
+  @import "components/tags";
+  @import "components/skeletons";
+  @import "components/no-search";
+}

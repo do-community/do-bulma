@@ -16,7 +16,29 @@ limitations under the License.
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css");
 
-@import "components/fonts";
+@import "fonts";
+
+// Generic base stuff
+html,
+body {
+  background: $background;
+  box-sizing: border-box;
+  color: $text;
+  font: $font-weight $font-size unquote("/") $line-height $font-family;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
 
 // This just fixes issues with the DigitalOcean Community page design that we don't like
 body {
