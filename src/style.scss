@@ -19,7 +19,7 @@ limitations under the License.
 @import "globals/base";
 
 .do-bulma {
-  @import "../node_modules/bulma/bulma";
+  @import "../../bulma/bulma";
   @import "components/base";
   @import "components/typography";
   @import "components/header";
