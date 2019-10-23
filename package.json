@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run lint && npm run build",
     "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
-    "build": "sass src/style.scss:build/style.css"
+    "build": "parcel build src/style.scss -d build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
     "bulma": "^0.8.0"
   },
   "devDependencies": {
-    "sass": "^1.23.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.1",
     "sass-lint": "^1.13.1"
   }
 }
