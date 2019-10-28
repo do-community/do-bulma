@@ -265,9 +265,12 @@ textarea {
       width: 350px;
     }
 
-    + button.button {
+    + button.button,
+    + input[type="submit"] {
+      flex-grow: 0;
       height: 45px;
       margin: 0;
+      padding: 0 ($margin * 2);
       width: 100%;
 
       @media (min-width: $breakpoint) {
