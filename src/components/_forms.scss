@@ -45,7 +45,8 @@ textarea,
   }
 }
 
-input {
+input,
+.input {
   &:not([type]),
   &[type="text"],
   &[type="password"],
@@ -167,7 +168,8 @@ input {
   }
 }
 
-textarea {
+textarea,
+.textarea {
   @include disabled-focus;
 
   background: $background;
@@ -243,12 +245,14 @@ textarea {
     top: 15px;
     z-index: 1;
 
-    + input {
+    + input,
+    + .input {
       padding-left: $margin * 2 + 18;
     }
   }
 
-  input {
+  input,
+  .input {
     border: $border-size solid $dark-grey;
     border-radius: $border-radius;
     display: inline-block;
