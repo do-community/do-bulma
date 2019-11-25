@@ -91,9 +91,9 @@ h2,
 h3,
 h4,
 .title {
+  @include sailec-medium;
+
   color: $dark-blue;
-  font-family: $medium-font-family;
-  font-weight: $font-weight;
   margin: 0 0 $margin;
   text-transform: none;
 }
@@ -121,7 +121,7 @@ h3 {
 }
 
 h4 {
-  color: #676767;
+  color: lighten($text, 20%);
   font-size: .8rem;
   line-height: 1.25;
   text-transform: uppercase;
@@ -131,6 +131,5 @@ h4 {
 h1,
 b,
 strong {
-  font-family: $bold-font-family;
-  font-weight: $font-weight;
+  @include sailec-bold;
 }
