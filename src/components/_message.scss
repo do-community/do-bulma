@@ -23,10 +23,10 @@ article.message {
     padding: ($margin / 2) $margin;
 
     p {
+      @include sailec-medium;
+
       color: #000;
-      font-family: $medium-font-family;
       font-size: 1em;
-      font-weight: $font-weight;
       line-height: 1.5;
       margin: 0;
     }
