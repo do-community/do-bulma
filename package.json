@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run lint && npm run build",
     "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
-    "build": "parcel build src/style.scss -d build"
+    "build": "parcel build src/style.scss -d build",
+    "demo": "do-vue template && parcel ./test/index.html --out-dir ./dev --port 8000"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,15 @@
     "bulma": "^0.8.0"
   },
   "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.2",
+    "do-vue": "git+https://github.com/do-community/do-vue.git",
     "parcel-bundler": "^1.12.4",
+    "posthtml": "^0.12.0",
+    "posthtml-extend": "^0.3.0",
     "sass": "^1.23.1",
-    "sass-lint": "^1.13.1"
+    "sass-lint": "^1.13.1",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-template-compiler": "^2.6.10"
   }
 }
