@@ -196,7 +196,7 @@ textarea,
 }
 
 :-ms-input-placeholder {
-  color: $muted !important; // sass-lint:disable-line no-important
+  color: $light-grey !important; // sass-lint:disable-line no-important
 
   &:disabled {
     color: $text !important; // sass-lint:disable-line no-important
@@ -204,7 +204,7 @@ textarea,
 }
 
 ::-moz-placeholder { // sass-lint:disable-line no-mergeable-selectors
-  color: $muted;
+  color: $light-grey;
 
   &:disabled {
     color: $text;
@@ -212,7 +212,7 @@ textarea,
 }
 
 ::-webkit-input-placeholder {
-  color: $muted;
+  color: $light-grey;
 
   &:disabled {
     color: $text;
@@ -238,11 +238,11 @@ textarea,
   }
 
   i {
-    color: $dark-grey;
+    color: $light-grey;
     font-size: 18px;
     left: $margin;
     position: absolute;
-    top: 15px;
+    top: 16px;
     z-index: 1;
 
     + input,
@@ -253,11 +253,13 @@ textarea,
 
   input,
   .input {
-    border: $border-size solid $dark-grey;
+    background: $search;
+    border: 0;
     border-radius: $border-radius;
     display: inline-block;
     flex-grow: 1;
-    font-size: 18px;
+    font-size: 16px;
+    height: 50px;
     line-height: normal;
     margin-bottom: $margin / 2;
     max-width: 100%;
@@ -268,8 +270,14 @@ textarea,
       width: 350px;
     }
 
+    &.is-light {
+      background: $background;
+      box-shadow: 0 4px 4px rgba($dark-blue, .05);
+    }
+
     + button.button,
     + input[type="submit"] {
+      box-shadow: 0 2px 8px rgba($dark-blue, .1);
       flex-grow: 0;
       height: 45px;
       margin: 0;
@@ -277,20 +285,24 @@ textarea,
       width: 100%;
 
       @media (min-width: $breakpoint) {
-        margin: 1.5px 0 0 $margin;
+        margin: 2.5px 0 0 $margin;
         width: auto;
       }
 
       &.is-inline {
+        @include sailec-regular;
+
         background: none;
         border: 0;
+        box-shadow: none;
         color: $primary;
         font-size: 16px;
+        height: 50px;
         margin: 0;
         outline: none;
         padding: 0;
         position: absolute;
-        right: $margin;
+        right: 18px;
         top: 0;
         width: auto;
         z-index: 1;
