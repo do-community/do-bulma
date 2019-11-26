@@ -104,7 +104,6 @@ limitations under the License.
 
                     <p>Text with <code class="slim">slim code</code> inline</p>
                     <pre><code>A block of code</code></pre>
-                    <pre><code>A block of code</code></pre>
 
                     <p>
                         <span class="tag">Tag one</span>
