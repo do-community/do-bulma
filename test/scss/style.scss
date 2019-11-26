@@ -15,3 +15,11 @@ limitations under the License.
 */
 
 @import "../../src/style";
+
+.do-bulma {
+  .main.container {
+    > div + div {
+      margin-top: 3em;
+    }
+  }
+}

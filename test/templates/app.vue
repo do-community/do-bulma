@@ -33,24 +33,27 @@ limitations under the License.
                            placeholder="The input"
                     />
                     <button class="button is-primary">
-                        Go
+                        View components
                     </button>
                 </div>
             </form>
         </Landing>
 
         <div v-else>
-            <Header title="App Title" @form-event="modal">
+            <Header title="App Title">
                 <template v-slot:description>
                     App Description
                 </template>
                 <template v-slot:header>
                     <div>
                         <p>
-                            <b>Header Text:</b>
-                            <span><a href="#" class="jump-link">Link</a></span>
-                            <span><a href="#" class="jump-link">Link</a></span>
-                            <span><a href="#" class="jump-link">Link</a></span>
+                            <b>Sections:</b>
+                            <span><a href="#headers" class="jump-link">Headers</a></span>
+                            <span><a href="#typography" class="jump-link">Typography</a></span>
+                            <span><a href="#messages" class="jump-link">Messages</a></span>
+                            <span><a href="#skeletons" class="jump-link">Skeletons</a></span>
+                            <span><a href="#tables" class="jump-link">Tables</a></span>
+                            <span><a href="#buttons" class="jump-link">Buttons</a></span>
                         </p>
                     </div>
                 </template>
@@ -68,13 +71,132 @@ limitations under the License.
                            placeholder="The input"
                     />
                     <button class="button is-inline">
-                        Show Modal
+                        Do nothing
                     </button>
                 </template>
             </Header>
 
             <div class="main container">
+                <div id="headers">
+                    <h2>
+                        Headers
+                        <a href="#headers"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
 
+                    <h1>Header One</h1>
+                    <h2>Header Two</h2>
+                    <h3>Header Three</h3>
+                    <h4>Header Four</h4>
+                </div>
+
+                <div id="typography">
+                    <h2>
+                        Typography
+                        <a href="#typography"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <p>Paragraph</p>
+                    <p><b>Bold</b> <i>Italic</i></p>
+                    <p><ExternalLink text="External link"></ExternalLink></p>
+                    <p><a>Normal link</a></p>
+
+                    <p>Text with <code class="slim">slim code</code> inline</p>
+                    <pre><code>A block of code</code></pre>
+                    <pre><code>A block of code</code></pre>
+
+                    <p>
+                        <span class="tag">Tag one</span>
+                        <span class="tag">Tag two</span>
+                        <span class="tag">Tag three</span>
+                    </p>
+                </div>
+
+                <div id="messages">
+                    <h2>
+                        Messages
+                        <a href="#messages"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <p><a class="button is-primary" @click="modal">View Modal</a></p>
+
+                    <article class="message">
+                        <div class="message-header">
+                            <p>Message header</p>
+                            <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body">
+                            Message body
+                        </div>
+                    </article>
+                </div>
+
+                <div id="skeletons">
+                    <h2>
+                        Skeletons
+                        <a href="#skeletons"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <p>
+                        <span v-for="_ in 3">
+                            <br/>
+                            <span v-for="_ in 3" class="data-skeleton skeleton-running"
+                                  :style="{ ...getSkeletonStyle(150, 400), display: 'inline-block', marginRight: '0.2em' }">
+                            </span>
+                        </span>
+                    </p>
+                </div>
+
+                <div id="tables">
+                    <h2>
+                        Tables
+                        <a href="#tables"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>
+                                    Column 1
+                                </th>
+                                <th>
+                                    Column 2
+                                </th>
+                                <th>
+                                    Column 3
+                                    <i v-tippy title="I need help, please!" class="far fa-question-circle help"></i>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-for="i in 3">
+                                <td v-for="j in 3">
+                                    ({{ i }}, {{ j }})
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="buttons">
+                    <h2>
+                        Buttons
+                        <a href="#buttons"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <p v-for="item in ['primary', 'link', 'info', 'secondary', 'success', 'warning', 'danger']">
+                        <a :class="`button is-${item}`">{{ item }}</a>
+                        <a :class="`button is-${item} is-inverted`">{{ item }} inverted</a>
+                        <a :class="`button is-${item} is-outline`">{{ item }} outline</a>
+                    </p>
+                </div>
             </div>
 
             <Modal ref="Modal" title="Modal title">
@@ -88,6 +210,8 @@ limitations under the License.
     import Landing from "do-vue/src/templates/landing"
     import Header from "do-vue/src/templates/header"
     import Modal from "do-vue/src/templates/modal"
+    import ExternalLink from "do-vue/src/templates/external_link"
+    import { getSkeletonStyle } from "../utils/skeletonStyle"
 
     export default {
         name: "App",
@@ -95,6 +219,7 @@ limitations under the License.
             Landing,
             Header,
             Modal,
+            ExternalLink,
         },
         data() {
             return {
@@ -108,6 +233,7 @@ limitations under the License.
             modal() {
                 this.$refs.Modal.open()
             },
+            getSkeletonStyle,
         }
     }
 </script>
