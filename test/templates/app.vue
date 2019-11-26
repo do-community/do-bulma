@@ -212,6 +212,10 @@ limitations under the License.
     import Modal from "do-vue/src/templates/modal"
     import ExternalLink from "do-vue/src/templates/external_link"
     import { getSkeletonStyle } from "../utils/skeletonStyle"
+    import VueTippy from "vue-tippy"
+    import Vue from "vue"
+
+    Vue.use(VueTippy)
 
     export default {
         name: "App",
