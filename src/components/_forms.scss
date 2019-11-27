@@ -253,8 +253,8 @@ textarea,
 
   input,
   .input {
-    background: $search;
-    border: 0;
+    background: $input;
+    border: $border-size solid $input-border;
     border-radius: $border-radius;
     display: inline-block;
     flex-grow: 1;
@@ -270,8 +270,24 @@ textarea,
       width: 350px;
     }
 
+    &.is-disabled,
+    &:disabled,
+    &[readonly] {
+      background: $input-disabled;
+      border-color: $input-border-disabled;
+      cursor: not-allowed;
+      opacity: 1;
+      user-select: none;
+
+      + button.button,
+      + input[type="submit"] {
+        opacity: .3;
+        pointer-events: none;
+      }
+    }
+
     &.is-light {
-      background: $background;
+      border: 0;
       box-shadow: 0 4px 4px rgba($dark-blue, .05);
     }
 

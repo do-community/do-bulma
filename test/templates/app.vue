@@ -54,6 +54,7 @@ limitations under the License.
                             <span><a href="#skeletons" class="jump-link">Skeletons</a></span>
                             <span><a href="#tables" class="jump-link">Tables</a></span>
                             <span><a href="#buttons" class="jump-link">Buttons</a></span>
+                            <span><a href="#inputs" class="jump-link">Inputs</a></span>
                         </p>
                     </div>
                 </template>
@@ -195,6 +196,110 @@ limitations under the License.
                         <a :class="`button is-${item} is-inverted`">{{ item }} inverted</a>
                         <a :class="`button is-${item} is-outline`">{{ item }} outline</a>
                     </p>
+                </div>
+
+                <div id="inputs">
+                    <h2>
+                        Inputs
+                        <a href="#inputs"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div>
+                        <p>Main Search:</p>
+                        <form autocomplete="on" @submit.prevent="">
+                            <div class="input-container">
+                                <label for="input_search" class="hidden">Input</label>
+                                <i class="fas fa-search"></i>
+                                <input id="input_search"
+                                       class="input"
+                                       type="text"
+                                       placeholder="The input"
+                                />
+                                <button class="button is-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                        <form autocomplete="on" @submit.prevent="">
+                            <div class="input-container">
+                                <label for="input_search_disabled" class="hidden">Input</label>
+                                <i class="fas fa-search"></i>
+                                <input id="input_search_disabled"
+                                       class="input"
+                                       type="text"
+                                       placeholder="Disabled input"
+                                       disabled
+                                />
+                                <button class="button is-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                        <form autocomplete="on" @submit.prevent="">
+                            <div class="input-container">
+                                <label for="input_search_readonly" class="hidden">Input</label>
+                                <i class="fas fa-search"></i>
+                                <input id="input_search_readonly"
+                                       class="input"
+                                       type="text"
+                                       placeholder="Read only input"
+                                       readonly
+                                />
+                                <button class="button is-primary">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="demo-header-search">
+                        <p>Header Search:</p>
+                        <form autocomplete="on" @submit.prevent="">
+                            <div class="input-container">
+                                <label for="input_header_search" class="hidden">Input</label>
+                                <i class="fas fa-search"></i>
+                                <input id="input_header_search"
+                                       class="input"
+                                       type="text"
+                                       placeholder="The input"
+                                />
+                                <button class="button is-inline">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                        <form autocomplete="on" @submit.prevent="">
+                            <div class="input-container">
+                                <label for="input_header_search_disabled" class="hidden">Input</label>
+                                <i class="fas fa-search"></i>
+                                <input id="input_header_search_disabled"
+                                       class="input"
+                                       type="text"
+                                       placeholder="Disabled input"
+                                       disabled
+                                />
+                                <button class="button is-inline">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                        <form autocomplete="on" @submit.prevent="">
+                            <div class="input-container">
+                                <label for="input_header_search_readonly" class="hidden">Input</label>
+                                <i class="fas fa-search"></i>
+                                <input id="input_header_search_readonly"
+                                       class="input"
+                                       type="text"
+                                       placeholder="Read only input"
+                                       readonly
+                                />
+                                <button class="button is-inline">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
 
