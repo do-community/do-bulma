@@ -4,3 +4,5 @@ node_modules
 build
 .cache
 dev
+dist/
+.DS_Store
