@@ -24,6 +24,9 @@ jobs:
         npm test
         npm run build
 
+    - name: Build the demo
+      run: npm run demo-build
+
     - name: Deploy commit to DigitalOcean Spaces
       run: aws s3 sync ./dist s3://${{ secrets.SPACES_BUCKET }}/commits/do-bulma/${{ github.sha }} --endpoint=https://${{ secrets.SPACES_REGION }}.digitaloceanspaces.com --acl public-read --content-encoding utf8
       env:
