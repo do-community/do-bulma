@@ -25,10 +25,7 @@ jobs:
       run: |
         npm ci
         npm test
-        npm run build
-
-    - name: Build the demo
-      run: npm run demo-build  
+        npm run demo:build
 
     - name: Deploy master to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@2.0.0
