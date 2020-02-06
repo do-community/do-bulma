@@ -56,6 +56,7 @@ limitations under the License.
                             <span><a href="#buttons" class="jump-link">Buttons</a></span>
                             <span><a href="#inputs" class="jump-link">Inputs</a></span>
                             <span><a href="#panels" class="jump-link">Panels</a></span>
+                            <span><a href="#bars" class="jump-link">Bars</a></span>
                         </p>
                     </div>
                 </template>
@@ -328,6 +329,19 @@ limitations under the License.
                             <p>Fast disk <sub> / SSD magic</sub></p>
                             <p><code>Vertical droplet panel list</code></p>
                         </div>
+                    </div>
+                </div>
+
+                <div id="bars">
+                    <h2>
+                        Bars
+                        <a href="#bars"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div class="bars">
+                        <div class="bar is-primary" style="width: 75%;"></div>
+                        <div class="bar is-dark" style="width: 40%;"></div>
                     </div>
                 </div>
             </div>

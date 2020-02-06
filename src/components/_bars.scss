@@ -14,24 +14,33 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-@import "globals/variables";
-@import "globals/fonts";
-@import "globals/base";
+.bars {
+  background: $border;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 
-.do-bulma {
-  @import "~bulma/bulma";
-  @import "components/base";
-  @import "components/typography";
-  @import "components/header";
-  @import "components/landing";
-  @import "components/buttons";
-  @import "components/forms";
-  @import "components/tables";
-  @import "components/footer";
-  @import "components/modals";
-  @import "components/message";
-  @import "components/tags";
-  @import "components/skeletons";
-  @import "components/panels";
-  @import "components/bars";
+  .bar {
+    height: $height * .6;
+    transition: width .2s ease-in-out;
+
+    &.is-primary {
+      background: $primary;
+    }
+
+    &.is-dark {
+      background: $dark-blue;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
 }
