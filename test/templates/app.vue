@@ -1,5 +1,5 @@
 <!--
-Copyright 2019 DigitalOcean
+Copyright 2020 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -55,6 +55,8 @@ limitations under the License.
                             <span><a href="#tables" class="jump-link">Tables</a></span>
                             <span><a href="#buttons" class="jump-link">Buttons</a></span>
                             <span><a href="#inputs" class="jump-link">Inputs</a></span>
+                            <span><a href="#panels" class="jump-link">Panels</a></span>
+                            <span><a href="#bars" class="jump-link">Bars</a></span>
                         </p>
                     </div>
                 </template>
@@ -99,6 +101,7 @@ limitations under the License.
                     <hr/>
 
                     <p>Paragraph</p>
+                    <p class="has-text-muted">Muted text</p>
                     <p><b>Bold</b> <i>Italic</i></p>
                     <p><ExternalLink text="External link"></ExternalLink></p>
                     <p><a>Normal link</a></p>
@@ -299,6 +302,46 @@ limitations under the License.
                                 </button>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <div id="panels">
+                    <h2>
+                        Panels
+                        <a href="#panels"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div class="panel-list">
+                        <div class="panel selectable is-droplet" v-for="_ in 3">
+                            <p><em><sup>$</sup>10<sub> / mo</sub></em></p>
+                            <p>Hover over me!</p>
+                            <hr/>
+                            <p>Fast disk <sub> / SSD magic</sub></p>
+                            <p><code>Droplet panel list</code></p>
+                        </div>
+                    </div>
+
+                    <div class="panel-list panel-list-vertical">
+                        <div class="panel is-droplet" v-for="_ in 3">
+                            <p><em><sup>$</sup>10<sub> / mo</sub></em></p>
+                            <hr/>
+                            <p>Fast disk <sub> / SSD magic</sub></p>
+                            <p><code>Vertical droplet panel list</code></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bars">
+                    <h2>
+                        Bars
+                        <a href="#bars"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div class="bars">
+                        <div class="bar is-primary" style="width: 75%;"></div>
+                        <div class="bar is-dark" style="width: 40%;"></div>
                     </div>
                 </div>
             </div>
