@@ -55,6 +55,7 @@ limitations under the License.
                             <span><a href="#tables" class="jump-link">Tables</a></span>
                             <span><a href="#buttons" class="jump-link">Buttons</a></span>
                             <span><a href="#inputs" class="jump-link">Inputs</a></span>
+                            <span><a href="#panels" class="jump-link">Panels</a></span>
                         </p>
                     </div>
                 </template>
@@ -300,6 +301,33 @@ limitations under the License.
                                 </button>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <div id="panels">
+                    <h2>
+                        Panels
+                        <a href="#panels"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div class="panel-list">
+                        <div class="panel selectable is-droplet" v-for="_ in 3">
+                            <p><em><sup>$</sup>10<sub> / mo</sub></em></p>
+                            <p>Hover over me!</p>
+                            <hr/>
+                            <p>Fast disk <sub> / SSD magic</sub></p>
+                            <p><code>Droplet panel list</code></p>
+                        </div>
+                    </div>
+
+                    <div class="panel-list panel-list-vertical">
+                        <div class="panel is-droplet" v-for="_ in 3">
+                            <p><em><sup>$</sup>10<sub> / mo</sub></em></p>
+                            <hr/>
+                            <p>Fast disk <sub> / SSD magic</sub></p>
+                            <p><code>Vertical droplet panel list</code></p>
+                        </div>
                     </div>
                 </div>
             </div>
