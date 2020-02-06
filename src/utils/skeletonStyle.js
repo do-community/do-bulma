@@ -1,5 +1,5 @@
 /*
-Copyright 2019 DigitalOcean
+Copyright 2020 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,10 +15,10 @@ limitations under the License.
 */
 
 const getRandomInt = (min, max) => {
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 const getSkeletonStyle = (min, max, size = 1) => {
     return {
@@ -30,7 +30,7 @@ const getSkeletonStyle = (min, max, size = 1) => {
         opacity: `${getRandomInt(20, 30)/100}`,
         animationDelay: `${getRandomInt(0, 600)}ms`,
         animationDuration: `${getRandomInt(900, 1200)}ms`,
-    }
-}
+    };
+};
 
-module.exports = { getRandomInt, getSkeletonStyle }
+module.exports = { getRandomInt, getSkeletonStyle };
