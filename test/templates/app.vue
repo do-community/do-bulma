@@ -1,5 +1,5 @@
 <!--
-Copyright 2019 DigitalOcean
+Copyright 2020 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -99,6 +99,7 @@ limitations under the License.
                     <hr/>
 
                     <p>Paragraph</p>
+                    <p class="has-text-muted">Muted text</p>
                     <p><b>Bold</b> <i>Italic</i></p>
                     <p><ExternalLink text="External link"></ExternalLink></p>
                     <p><a>Normal link</a></p>
