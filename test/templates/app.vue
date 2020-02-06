@@ -315,7 +315,7 @@ limitations under the License.
     import Header from "do-vue/src/templates/header"
     import Modal from "do-vue/src/templates/modal"
     import ExternalLink from "do-vue/src/templates/external_link"
-    import { getSkeletonStyle } from "../utils/skeletonStyle"
+    import { getSkeletonStyle } from "../../src/utils/skeletonStyle"
     import VueTippy from "vue-tippy"
     import Vue from "vue"
 
