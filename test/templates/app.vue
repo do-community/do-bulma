@@ -210,6 +210,12 @@ limitations under the License.
                         <a :class="`button is-${item} is-inverted`">{{ item }} inverted</a>
                         <a :class="`button is-${item} is-outline`">{{ item }} outline</a>
                     </p>
+
+                    <p>
+                        <a class="button is-small">is-small</a>
+                        <a class="button is-mini">is-mini</a>
+                        <a class="button is-tiny">is-tiny</a>
+                    </p>
                 </div>
 
                 <div id="inputs">
