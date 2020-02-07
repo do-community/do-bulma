@@ -143,10 +143,21 @@ limitations under the License.
                     </h2>
                     <hr/>
 
+                    <p>Animated skeletons:</p>
                     <p>
-                        <span v-for="_ in 3">
+                        <span v-for="_ in 2">
                             <br/>
                             <span v-for="_ in 3" class="data-skeleton skeleton-running"
+                                  :style="{ ...getSkeletonStyle(150, 400), display: 'inline-block', marginRight: '0.2em' }">
+                            </span>
+                        </span>
+                    </p>
+
+                    <p>Static skeletons:</p>
+                    <p>
+                        <span v-for="_ in 2">
+                            <br/>
+                            <span v-for="_ in 3" class="data-skeleton"
                                   :style="{ ...getSkeletonStyle(150, 400), display: 'inline-block', marginRight: '0.2em' }">
                             </span>
                         </span>
