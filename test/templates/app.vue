@@ -143,10 +143,21 @@ limitations under the License.
                     </h2>
                     <hr/>
 
+                    <p>Animated skeletons:</p>
                     <p>
-                        <span v-for="_ in 3">
+                        <span v-for="_ in 2">
                             <br/>
                             <span v-for="_ in 3" class="data-skeleton skeleton-running"
+                                  :style="{ ...getSkeletonStyle(150, 400), display: 'inline-block', marginRight: '0.2em' }">
+                            </span>
+                        </span>
+                    </p>
+
+                    <p>Static skeletons:</p>
+                    <p>
+                        <span v-for="_ in 2">
+                            <br/>
+                            <span v-for="_ in 3" class="data-skeleton"
                                   :style="{ ...getSkeletonStyle(150, 400), display: 'inline-block', marginRight: '0.2em' }">
                             </span>
                         </span>
@@ -198,6 +209,12 @@ limitations under the License.
                         <a :class="`button is-${item}`">{{ item }}</a>
                         <a :class="`button is-${item} is-inverted`">{{ item }} inverted</a>
                         <a :class="`button is-${item} is-outline`">{{ item }} outline</a>
+                    </p>
+
+                    <p>
+                        <a class="button is-small">is-small</a>
+                        <a class="button is-mini">is-mini</a>
+                        <a class="button is-tiny">is-tiny</a>
                     </p>
                 </div>
 
@@ -342,6 +359,21 @@ limitations under the License.
                     <div class="bars">
                         <div class="bar is-primary" style="width: 75%;"></div>
                         <div class="bar is-dark" style="width: 40%;"></div>
+                    </div>
+
+                    <br/>
+
+                    <div class="bars">
+                        <div class="bar-stack">
+                            <div class="bar is-primary" style="width: 70%;"></div>
+                            <div class="bar is-dark" style="width: 20%;"></div>
+                        </div>
+                        <div class="bar-stack">
+                            <div class="bar is-primary" style="width: 4%;"></div>
+                            <div class="bar is-dark" style="width: 6%;"></div>
+                            <div class="bar is-primary" style="width: 10%;"></div>
+                            <div class="bar is-dark" style="width: 20%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>

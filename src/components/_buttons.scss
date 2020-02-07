@@ -88,17 +88,23 @@ limitations under the License.
     opacity: $disabled;
   }
 
-  &.is-mini {
-    height: 34px;
-    line-height: 34px;
-    padding: 0 16px;
-  }
-
   &.is-small {
     font-size: 14px;
     height: 40px;
     line-height: 40px;
-    padding: 0 24px;
+    padding: 0 ($margin * 1.5);
+  }
+
+  &.is-mini {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 $margin;
+  }
+
+  &.is-tiny {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 ($margin * .5);
   }
 }
 
