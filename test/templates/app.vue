@@ -360,6 +360,21 @@ limitations under the License.
                         <div class="bar is-primary" style="width: 75%;"></div>
                         <div class="bar is-dark" style="width: 40%;"></div>
                     </div>
+
+                    <br/>
+
+                    <div class="bars">
+                        <div class="bar-stack">
+                            <div class="bar is-primary" style="width: 70%;"></div>
+                            <div class="bar is-dark" style="width: 20%;"></div>
+                        </div>
+                        <div class="bar-stack">
+                            <div class="bar is-primary" style="width: 4%;"></div>
+                            <div class="bar is-dark" style="width: 6%;"></div>
+                            <div class="bar is-primary" style="width: 10%;"></div>
+                            <div class="bar is-dark" style="width: 20%;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -21,6 +21,19 @@ limitations under the License.
   flex-direction: column;
   height: auto;
 
+  .bar,
+  .bar-stack {
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+
   .bar {
     height: $height * .6;
     transition: width .2s ease-in-out;
@@ -32,15 +45,40 @@ limitations under the License.
     &.is-dark {
       background: $dark-blue;
     }
+  }
+
+  .bar-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
 
     &:first-child {
-      border-top-left-radius: $border-radius;
-      border-top-right-radius: $border-radius;
+      .bar {
+        &:first-child {
+          border-top-left-radius: $border-radius;
+        }
+
+        &:last-child {
+          border-top-right-radius: $border-radius;
+        }
+      }
     }
 
     &:last-child {
-      border-bottom-left-radius: $border-radius;
-      border-bottom-right-radius: $border-radius;
+      .bar {
+        &:first-child {
+          border-bottom-left-radius: $border-radius;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: $border-radius;
+        }
+      }
+    }
+
+    .bar {
+      border-radius: 0;
     }
   }
 }
