@@ -57,6 +57,7 @@ limitations under the License.
                             <span><a href="#inputs" class="jump-link">Inputs</a></span>
                             <span><a href="#panels" class="jump-link">Panels</a></span>
                             <span><a href="#bars" class="jump-link">Bars</a></span>
+                            <span><a href="#tabs" class="jump-link">Tabs</a></span>
                         </p>
                     </div>
                 </template>
@@ -374,6 +375,31 @@ limitations under the License.
                             <div class="bar is-primary" style="width: 10%;"></div>
                             <div class="bar is-dark" style="width: 20%;"></div>
                         </div>
+                    </div>
+                </div>
+
+                <div id="tabs">
+                    <h2>
+                        Tabs
+                        <a href="#tabs"><i class="fas fa-link"></i></a>
+                    </h2>
+                    <hr/>
+
+                    <div class="tabs">
+                        <ul>
+                            <li class="is-active">
+                                <a>Hello</a>
+                            </li>
+                            <li>
+                                <a>World</a>
+                            </li>
+                            <li>
+                                <a>do-bulma Tabs</a>
+                            </li>
+                            <li>
+                                <a>Tabulated Content</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

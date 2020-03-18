@@ -1,0 +1,64 @@
+.tabs {
+  ul {
+    border-bottom: 0;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      background: $tab-border;
+      border-radius: $tab-border-size * 2;
+      bottom: 0;
+      content: "";
+      height: $tab-border-size;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    li {
+      &.is-active {
+        a {
+          color: $dark-blue;
+
+          &::after {
+            background: $primary;
+          }
+        }
+      }
+
+      a {
+        @include sailec-medium;
+
+        border-bottom: 0;
+        color: $dark-grey;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        padding: 10px 20px (10px + $tab-border-size);
+        position: relative;
+        transition: color $transition;
+
+        &::after {
+          background: transparent;
+          border-radius: $tab-border-size * 2;
+          bottom: 0;
+          content: "";
+          height: $tab-border-size;
+          left: 0;
+          position: absolute;
+          transition: background $transition;
+          width: 100%;
+          z-index: 1;
+        }
+
+        &:hover {
+          color: $dark-blue;
+
+          &::after {
+            background: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+}
