@@ -330,8 +330,9 @@ limitations under the License.
                     </h2>
                     <hr/>
 
+                    <h3>Horizontal panel list, is-selectable &amp; is-droplet</h3>
                     <div class="panel-list">
-                        <div class="panel selectable is-droplet" v-for="_ in 3">
+                        <div class="panel is-selectable is-droplet" v-for="_ in 3">
                             <p><em><sup>$</sup>10<sub> / mo</sub></em></p>
                             <p>Hover over me!</p>
                             <hr/>
@@ -340,8 +341,9 @@ limitations under the License.
                         </div>
                     </div>
 
+                    <h3>Vertical panel list, is-droplet &amp; is-focused / is-unfocused</h3>
                     <div class="panel-list panel-list-vertical">
-                        <div class="panel is-droplet" v-for="_ in 3">
+                        <div :class="`panel is-droplet is-${i === 1 ? '' : 'un'}focused`" v-for="i in 3">
                             <p><em><sup>$</sup>10<sub> / mo</sub></em></p>
                             <hr/>
                             <p>Fast disk <sub> / SSD magic</sub></p>

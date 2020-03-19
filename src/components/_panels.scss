@@ -18,18 +18,19 @@ limitations under the License.
   background: $background;
   border: $thin-border;
   border-radius: $border-radius;
-  box-shadow: none;
+  box-shadow: 0 2px 4px rgba($dark-blue, .06);
   color: $text;
   margin: 1rem .5rem;
   padding: .5rem;
   text-align: center;
+  transition: box-shadow $transition, opacity $transition;
   width: 100%;
 
-  &.selectable {
+  &.is-selectable {
     cursor: pointer;
 
     &:hover {
-      background: $panel;
+      box-shadow: 0 10px 20px rgba($dark-blue, .1);
     }
   }
 
@@ -58,6 +59,11 @@ limitations under the License.
         font-size: $font-size * .8;
       }
 
+      sup {
+        line-height: inherit;
+        top: 0;
+      }
+
       sub {
         color: $text-secondary;
         vertical-align: baseline;
@@ -69,7 +75,21 @@ limitations under the License.
         margin: 0;
         padding: .2rem .4rem;
       }
+
+      small {
+        em {
+          font-size: 18px;
+        }
+      }
     }
+  }
+
+  &.is-focused {
+    box-shadow: 0 10px 20px rgba($dark-blue, .1);
+  }
+
+  &.is-unfocused {
+    opacity: .65;
   }
 }
 
