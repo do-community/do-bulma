@@ -445,6 +445,11 @@ limitations under the License.
                 this.$refs.Modal.open()
             },
             getSkeletonStyle,
-        }
+        },
+        mounted() {
+            if (window.location.hash) {
+                this.$data.landing = false;
+            }
+        },
     }
 </script>
