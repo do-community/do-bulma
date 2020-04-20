@@ -19,10 +19,12 @@ limitations under the License.
 // Generic base stuff
 html,
 body {
+  -moz-osx-font-smoothing: grayscale;
   background: $background;
   box-sizing: border-box;
   color: $text;
-  font: $regular-font-weight $font-size unquote("/") $line-height $regular-font-family;
+  font-family: $regular-font-family;
+  line-height: $line-height;
   margin: 0;
   min-height: 100vh;
   padding: 0;
