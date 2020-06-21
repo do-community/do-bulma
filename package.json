@@ -8,7 +8,7 @@
     "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
     "build": "parcel build src/style.scss -d build",
     "demo:dev": "BLANK_TEMPLATE=true do-vue template && parcel ./test/index.html --out-dir ./dev --port 8000",
-    "demo:build": "BLANK_TEMPLATE=true do-vue template && do-vue tool ./test ./dist",
+    "demo:build": "BLANK_TEMPLATE=true do-vue template && do-vue tool ./test ./dist --scope-hoisting",
     "deploy:spaces:comment": "do-vue comment do-bulma"
   },
   "repository": {
@@ -22,19 +22,19 @@
   },
   "homepage": "https://github.com/do-community/do-bulma#readme",
   "dependencies": {
-    "bulma": "^0.8.0"
+    "bulma": "^0.8.2"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.0.2",
+    "@vue/component-compiler-utils": "^3.1.2",
     "do-vue": "git+https://github.com/do-community/do-vue.git",
     "parcel-bundler": "^1.12.4",
-    "posthtml": "^0.12.0",
+    "posthtml": "^0.12.3",
     "posthtml-extend": "^0.3.0",
-    "sass": "^1.23.1",
+    "sass": "^1.26.8",
     "sass-lint": "^1.13.1",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.10",
-    "vue-tippy": "^4.0.3"
+    "vue-template-compiler": "^2.6.11",
+    "vue-tippy": "^4.4.0"
   }
 }
