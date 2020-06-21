@@ -14,13 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const getRandomInt = (min, max) => {
+export const getRandomInt = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const getSkeletonStyle = (min, max, size = 1) => {
+export const getSkeletonStyle = (min, max, size = 1) => {
     return {
         height: `${size}em`,
         margin: `${size * .35}em 0`,
@@ -33,4 +33,4 @@ const getSkeletonStyle = (min, max, size = 1) => {
     };
 };
 
-module.exports = { getRandomInt, getSkeletonStyle };
+export default { getRandomInt, getSkeletonStyle };
