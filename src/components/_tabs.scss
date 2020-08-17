@@ -1,4 +1,6 @@
 .tabs {
+  max-width: none;
+
   ul {
     border-bottom: 0;
     justify-content: center;
@@ -16,6 +18,8 @@
     }
 
     li {
+      margin: 0;
+
       &.is-active {
         a {
           color: $dark-blue;
