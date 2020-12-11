@@ -22,19 +22,19 @@
   },
   "homepage": "https://github.com/do-community/do-bulma#readme",
   "dependencies": {
-    "bulma": "^0.9.0"
+    "bulma": "^0.9.1"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
     "do-vue": "git+https://github.com/do-community/do-vue.git",
     "parcel-bundler": "^1.12.4",
-    "posthtml": "^0.13.3",
-    "posthtml-extend": "^0.5.0",
-    "sass": "^1.26.10",
+    "posthtml": "^0.15.1",
+    "posthtml-extend": "^0.6.0",
+    "sass": "^1.30.0",
     "sass-lint": "^1.13.1",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
     "vue-template-compiler": "^2.6.12",
-    "vue-tippy": "^4.7.0"
+    "vue-tippy": "^4.7.2"
   }
 }
