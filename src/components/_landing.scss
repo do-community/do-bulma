@@ -1,5 +1,5 @@
 /*
-Copyright 2019 DigitalOcean
+Copyright 2021 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ limitations under the License.
 .landing {
   display: flex;
   flex-direction: column;
-  margin-bottom: -$margin * 4; // Account for Community header
-  min-height: calc(100vh - 104px); // Account for Community footer
+  margin-bottom: -25px; // Account for Community footer margin
+  min-height: calc(100vh - 104px); // Account for Community header height
   position: relative;
 
   .container {
