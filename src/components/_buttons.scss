@@ -1,5 +1,5 @@
 /*
-Copyright 2020 DigitalOcean
+Copyright 2021 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ limitations under the License.
 
 .button {
   @include button-style($text, #ececec, $text, darken(#ececec, 5));
-  @include sailec-medium;
+  @include font-medium;
 
   border: 0;
   border-radius: 5px;
