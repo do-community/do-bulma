@@ -7,8 +7,8 @@
     "test": "npm run lint && npm run build",
     "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
     "build": "parcel build src/style.scss -d build",
-    "demo:dev": "do-vue template && parcel ./test/index.html --out-dir ./dev --port 8000",
-    "demo:build": "BLANK_TEMPLATE=true do-vue template && do-vue tool ./test ./dist --scope-hoisting",
+    "demo:dev": "do-vue template && do-vue dev ./dev 8000",
+    "demo:build": "BLANK_TEMPLATE=true do-vue template && do-vue tool ./test ./dist",
     "deploy:spaces:comment": "do-vue comment do-bulma"
   },
   "repository": {
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
-    "do-vue": "git+https://github.com/do-community/do-vue.git",
+    "do-vue": "git+https://github.com/do-community/do-vue.git#a10d761ea98008ca78e7db8accfa9030c1d9860b",
     "parcel-bundler": "^1.12.4",
     "posthtml": "^0.15.1",
     "posthtml-extend": "^0.6.0",
