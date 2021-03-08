@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
-    "do-vue": "git+https://github.com/do-community/do-vue.git#869ac289fb02195a90ee70402ed97bd3a008905b",
+    "do-vue": "git+https://github.com/do-community/do-vue.git#7ba6df2241e36635a6137b873620f026ba45fe93",
     "parcel-bundler": "^1.12.4",
     "posthtml": "^0.15.1",
     "posthtml-extend": "^0.6.0",
