@@ -7,7 +7,7 @@
     "test": "npm run lint && npm run build",
     "lint": "sass-lint src/{*,**/*}.scss --verbose --no-exit --config .sasslintrc",
     "build": "parcel build src/style.scss -d build",
-    "demo:dev": "do-vue template && do-vue dev ./dev 8000",
+    "demo:dev": "do-vue template && do-vue dev ./test ./dev 8000",
     "demo:build": "BLANK_TEMPLATE=true do-vue template && do-vue tool ./test ./dist",
     "deploy:spaces:comment": "do-vue comment do-bulma"
   },
