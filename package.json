@@ -24,7 +24,7 @@
     "bulma": "^0.9.1"
   },
   "devDependencies": {
-    "do-vue": "git+https://github.com/do-community/do-vue.git#MattIPv4/support-sass-fonts",
+    "do-vue": "git+https://github.com/do-community/do-vue.git",
     "posthtml": "^0.15.1",
     "posthtml-extend": "^0.6.0",
     "sass": "^1.30.0",
