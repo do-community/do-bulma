@@ -1,5 +1,5 @@
 /*
-Copyright 2020 DigitalOcean
+Copyright 2021 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -91,7 +91,7 @@ h2,
 h3,
 h4,
 .title {
-  @include sailec-medium;
+  @include font-medium;
 
   color: $dark-blue;
   margin: 0 0 $margin;
@@ -131,7 +131,7 @@ h4 {
 h1,
 b,
 strong {
-  @include sailec-bold;
+  @include font-bold;
 }
 
 // Coloring

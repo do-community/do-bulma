@@ -1,5 +1,5 @@
 /*
-Copyright 2019 DigitalOcean
+Copyright 2021 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -16,52 +16,60 @@ limitations under the License.
 
 @font-face {
   font-display: swap;
-  font-family: "Sailec-Light";
+  font-family: $light-font-family-name;
   font-weight: $light-font-weight;
-  src: url("https://assets.digitalocean.com/labs/fonts/Sailec-Light.woff") format("woff"),
-  url("https://assets.digitalocean.com/labs/fonts/Sailec-Light.woff2") format("woff2");
+  src: local("Inter-Light"),
+  url("../fonts/Inter-Light.ttf") format("ttf"),
+  url("../fonts/Inter-Light.woff") format("woff"),
+  url("../fonts/Inter-Light.woff2") format("woff2");
 }
 
-@mixin sailec-light {
+@mixin font-light {
   font-family: $light-font-family;
   font-weight: $light-font-weight;
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Sailec-Regular";
+  font-family: $regular-font-family-name;
   font-weight: $regular-font-weight;
-  src: url("https://assets.digitalocean.com/labs/fonts/Sailec-Regular.woff") format("woff"),
-  url("https://assets.digitalocean.com/labs/fonts/Sailec-Regular.woff2") format("woff2");
+  src: local("Inter-Regular"),
+  url("../fonts/Inter-Regular.ttf") format("ttf"),
+  url("../fonts/Inter-Regular.woff") format("woff"),
+  url("../fonts/Inter-Regular.woff2") format("woff2");
 }
 
-@mixin sailec-regular {
+@mixin font-regular {
   font-family: $regular-font-family;
   font-weight: $regular-font-weight;
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Sailec-Medium";
+  font-family: $medium-font-family-name;
   font-weight: $medium-font-weight;
-  src: url("https://assets.digitalocean.com/labs/fonts/Sailec-Medium.woff") format("woff"),
-  url("https://assets.digitalocean.com/labs/fonts/Sailec-Medium.woff2") format("woff2");
+  src: local("Inter-Medium"),
+  url("../fonts/Inter-Medium.ttf") format("ttf"),
+  url("../fonts/Inter-Medium.woff") format("woff"),
+  url("../fonts/Inter-Medium.woff2") format("woff2");
 }
 
-@mixin sailec-medium {
+@mixin font-medium {
   font-family: $medium-font-family;
   font-weight: $medium-font-weight;
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Sailec-Bold";
+  font-family: $bold-font-family-name;
   font-weight: $bold-font-weight;
-  src: url("https://assets.digitalocean.com/labs/fonts/Sailec-Bold.woff") format("woff"),
-  url("https://assets.digitalocean.com/labs/fonts/Sailec-Bold.woff2") format("woff2");
+  src: local("Inter-Bold"),
+  url("../fonts/Inter-Bold.ttf") format("ttf"),
+  url("../fonts/Inter-Bold.woff") format("woff"),
+  url("../fonts/Inter-Bold.woff2") format("woff2");
 }
 
-@mixin sailec-bold {
+@mixin font-bold {
   font-family: $bold-font-family;
   font-weight: $bold-font-weight;
 }
