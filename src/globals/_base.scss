@@ -1,5 +1,5 @@
 /*
-Copyright 2019 DigitalOcean
+Copyright 2021 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,11 +19,12 @@ limitations under the License.
 // Generic base stuff
 html,
 body {
+  @include font-regular;
+
   -moz-osx-font-smoothing: grayscale;
   background: $background;
   box-sizing: border-box;
   color: $text;
-  font-family: $regular-font-family;
   line-height: $line-height;
   margin: 0;
   min-height: 100vh;
