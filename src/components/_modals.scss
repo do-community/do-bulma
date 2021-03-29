@@ -1,5 +1,5 @@
 /*
-Copyright 2019 DigitalOcean
+Copyright 2021 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -57,7 +57,7 @@ limitations under the License.
       padding: 0;
 
       .modal-card-title {
-        font-family: $medium-font-family;
+        @include font-medium;
       }
     }
 
