@@ -32,6 +32,6 @@
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
     "vue-template-compiler": "^2.6.12",
-    "vue-tippy": "^4.7.2"
+    "vue-tippy": "^4.10.0"
   }
 }
