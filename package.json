@@ -28,9 +28,8 @@
     "posthtml": "^0.15.1",
     "posthtml-extend": "^0.6.0",
     "sass": "^1.30.0",
-    "sass-lint": "^1.13.1",
+    "sass-lint": "git+https://github.com/do-community/sass-lint.git",
     "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.4",
     "vue-template-compiler": "^2.6.12",
     "vue-tippy": "^4.10.0"
   }
