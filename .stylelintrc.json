@@ -9,10 +9,10 @@
         "value-no-vendor-prefix": true,
         "media-feature-name-no-vendor-prefix": true,
         "order/order": [
-			[
-				"custom-properties",
-			    "declarations"
-		    ]
+            [
+                "custom-properties",
+                "declarations"
+            ]
         ],
         "rule-empty-line-before": ["always", {"except": ["after-single-line-comment", "inside-block-and-after-rule", "first-nested"], "ignore": ["inside-block"]}],
         "declaration-block-single-line-max-declarations": 1,
