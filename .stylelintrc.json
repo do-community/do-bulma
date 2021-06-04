@@ -14,7 +14,19 @@
                 "declarations"
             ]
         ],
-        "rule-empty-line-before": ["always", {"except": ["after-single-line-comment", "inside-block-and-after-rule", "first-nested"], "ignore": ["inside-block"]}],
+        "rule-empty-line-before": [
+            "always",
+            {
+                "except": [
+                    "after-single-line-comment",
+                    "inside-block-and-after-rule",
+                    "first-nested"
+                ],
+                "ignore": [
+                    "inside-block"
+                ]
+            }
+        ],
         "declaration-block-single-line-max-declarations": 1,
         "declaration-block-no-duplicate-properties": true,
         "color-no-invalid-hex": true,
@@ -25,4 +37,3 @@
         "stylelint-order"
     ]
 }
-
