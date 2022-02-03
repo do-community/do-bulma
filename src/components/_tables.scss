@@ -31,12 +31,12 @@ $table-border: $thick-border-size solid $border;
 
         background: $panel;
         border: 0;
-        padding: ($margin / 2);
+        padding: ($margin * .5);
         text-align: left;
         vertical-align: bottom;
 
         @media (min-width: $breakpoint) {
-          padding: ($margin / 2) $margin;
+          padding: ($margin * .5) $margin;
         }
 
         .is-with-border & {
@@ -60,7 +60,7 @@ $table-border: $thick-border-size solid $border;
       td {
         border: $table-border;
         border-width: $thick-border-size 0 0;
-        padding: ($margin / 2);
+        padding: ($margin * .5);
         text-align: left;
         vertical-align: top;
 
@@ -85,10 +85,10 @@ $table-border: $thick-border-size solid $border;
         }
 
         hr {
-          margin: ($margin / 4) 0;
+          margin: ($margin * .25) 0;
 
           @media (min-width: $breakpoint) {
-            margin: ($margin / 2) 0;
+            margin: ($margin * .5) 0;
           }
         }
 
@@ -96,7 +96,7 @@ $table-border: $thick-border-size solid $border;
           font-size: $font-size * .75;
           height: $margin * 2;
           line-height: $margin * 2;
-          margin-top: $margin / 2;
+          margin-top: $margin * .5;
         }
       }
     }

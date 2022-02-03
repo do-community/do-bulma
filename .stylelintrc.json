@@ -31,8 +31,15 @@
         "declaration-block-no-duplicate-properties": true,
         "color-no-invalid-hex": true,
         "color-hex-length": "short",
-        "indentation": 2
+        "indentation": 2,
+        "no-invalid-position-at-import-rule": null,
+        "no-descending-specificity": null,
+        "selector-pseudo-class-no-unknown": null,
+        "value-keyword-case": null,
+        "scss/no-global-function-names": null,
+        "number-leading-zero": "never"
     },
+    "extends": "stylelint-config-standard-scss",
     "plugins": [
         "stylelint-order"
     ]

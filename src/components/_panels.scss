@@ -95,8 +95,7 @@ limitations under the License.
 
 .panel-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 
   &.panel-list-vertical {
     flex-direction: column;

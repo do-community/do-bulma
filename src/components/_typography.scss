@@ -42,7 +42,7 @@ p a {
 }
 
 // Selection
-::-moz-selection { // sass-lint:disable-line no-mergeable-selectors
+::-moz-selection { // stylelint-disable-line selector-no-vendor-prefix
   background: $primary;
   color: $background;
   text-shadow: none;
