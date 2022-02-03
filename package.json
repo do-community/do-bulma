@@ -21,17 +21,17 @@
   },
   "homepage": "https://github.com/do-community/do-bulma#readme",
   "dependencies": {
-    "bulma": "^0.9.1"
+    "bulma": "^0.9.3"
   },
   "devDependencies": {
     "do-vue": "git+https://github.com/do-community/do-vue.git",
-    "posthtml": "^0.15.1",
-    "posthtml-extend": "^0.6.0",
-    "sass": "^1.30.0",
-    "stylelint": "^13.13.0",
+    "posthtml": "^0.15.2",
+    "posthtml-extend": "^0.6.2",
+    "sass": "^1.49.7",
+    "stylelint": "^13.13.1",
     "stylelint-order": "^4.1.0",
-    "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12",
-    "vue-tippy": "^4.10.0"
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "vue-tippy": "^4.13.0"
   }
 }
