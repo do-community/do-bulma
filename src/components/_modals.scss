@@ -68,7 +68,7 @@ limitations under the License.
         height: auto;
         max-height: 50vh;
         overflow-wrap: break-word;
-        overflow-x: hidden !important; // sass-lint:disable-line no-important
+        overflow-x: hidden !important;
         white-space: pre-wrap;
       }
     }

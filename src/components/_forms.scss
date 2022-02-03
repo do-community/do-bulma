@@ -62,7 +62,6 @@ input,
 
   &:not([type]),
   &[type="text"],
-  &[type="text"],
   &[type="password"],
   &[type="datetime"],
   &[type="datetime-local"],
@@ -118,7 +117,7 @@ input,
     + label {
       cursor: pointer;
       display: inline-block;
-      margin-bottom: $margin / 2;
+      margin-bottom: $margin * .5;
       padding-left: 30px;
       position: relative;
       user-select: none;
@@ -187,7 +186,7 @@ textarea,
   width: 100%;
 }
 
-::-moz-placeholder {
+::-moz-placeholder { // stylelint-disable-line no-duplicate-selectors, selector-no-vendor-prefix
   opacity: 1;
 }
 
@@ -195,15 +194,15 @@ textarea,
   box-shadow: none;
 }
 
-:-ms-input-placeholder {
-  color: $light-grey !important; // sass-lint:disable-line no-important
+:-ms-input-placeholder { // stylelint-disable-line selector-no-vendor-prefix
+  color: $light-grey !important;
 
   &:disabled {
-    color: $text !important; // sass-lint:disable-line no-important
+    color: $text !important;
   }
 }
 
-::-moz-placeholder { // sass-lint:disable-line no-mergeable-selectors
+::-moz-placeholder { // stylelint-disable-line no-duplicate-selectors, selector-no-vendor-prefix
   color: $light-grey;
 
   &:disabled {
@@ -211,7 +210,7 @@ textarea,
   }
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder { // stylelint-disable-line selector-no-vendor-prefix
   color: $light-grey;
 
   &:disabled {
@@ -233,8 +232,7 @@ textarea,
 
   @media (min-width: $breakpoint) {
     align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
   }
 
   i {
@@ -261,7 +259,7 @@ textarea,
     font-size: 16px;
     height: 50px;
     line-height: normal;
-    margin-bottom: $margin / 2;
+    margin-bottom: $margin * .5;
     max-width: 100%;
     padding: 0 $margin;
     width: 100%;

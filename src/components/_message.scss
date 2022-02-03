@@ -20,7 +20,7 @@ article.message {
   .message-header {
     background: $message-color;
     border-radius: $border-radius $border-radius 0 0;
-    padding: ($margin / 2) $margin;
+    padding: ($margin * .5) $margin;
 
     p {
       @include font-medium;

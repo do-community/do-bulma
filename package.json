@@ -25,11 +25,12 @@
   },
   "devDependencies": {
     "do-vue": "git+https://github.com/do-community/do-vue.git",
-    "posthtml": "^0.15.2",
+    "posthtml": "^0.16.5",
     "posthtml-extend": "^0.6.2",
     "sass": "^1.49.7",
-    "stylelint": "^13.13.1",
-    "stylelint-order": "^4.1.0",
+    "stylelint": "^14.3.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
     "vue": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "vue-tippy": "^4.13.0"
