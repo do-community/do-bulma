@@ -1,5 +1,5 @@
 <!--
-Copyright 2020 DigitalOcean
+Copyright 2022 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -419,10 +419,7 @@ limitations under the License.
     import Modal from "do-vue/src/templates/modal"
     import ExternalLink from "do-vue/src/templates/external_link"
     import { getSkeletonStyle } from "../../src/utils/skeletonStyle"
-    import VueTippy from "vue-tippy"
-    import Vue from "vue"
-
-    Vue.use(VueTippy)
+    import { directive } from "vue-tippy";
 
     export default {
         name: "App",
@@ -431,6 +428,9 @@ limitations under the License.
             Header,
             Modal,
             ExternalLink,
+        },
+        directives: {
+            tippy: directive,
         },
         data() {
             return {
