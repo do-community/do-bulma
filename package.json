@@ -34,5 +34,12 @@
     "vue": "^3.2.31",
     "vue-template-compiler": "^2.6.14",
     "vue-tippy": "^6.0.0-alpha.54"
+  },
+  "overrides": {
+    "do-vue": {
+      "pretty-checkbox-vue": {
+        "vue": "$vue"
+      }
+    }
   }
 }
