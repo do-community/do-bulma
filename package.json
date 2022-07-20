@@ -21,18 +21,25 @@
   },
   "homepage": "https://github.com/do-community/do-bulma#readme",
   "dependencies": {
-    "bulma": "^0.9.3"
+    "bulma": "^0.9.4"
   },
   "devDependencies": {
-    "do-vue": "git+https://github.com/do-community/do-vue.git",
+    "do-vue": "github:do-community/do-vue",
     "posthtml": "^0.16.6",
-    "posthtml-extend": "^0.6.2",
-    "sass": "^1.49.9",
-    "stylelint": "^14.5.3",
-    "stylelint-config-standard-scss": "^3.0.0",
+    "posthtml-extend": "^0.6.3",
+    "sass": "^1.53.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-order": "^5.0.0",
-    "vue": "^3.2.31",
-    "vue-template-compiler": "^2.6.14",
-    "vue-tippy": "^6.0.0-alpha.54"
+    "vue": "^3.2.37",
+    "vue-template-compiler": "^2.7.7",
+    "vue-tippy": "^6.0.0-alpha.62"
+  },
+  "overrides": {
+    "do-vue": {
+      "pretty-checkbox-vue": {
+        "vue": "$vue"
+      }
+    }
   }
 }
