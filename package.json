@@ -24,7 +24,7 @@
     "bulma": "^0.9.3"
   },
   "devDependencies": {
-    "do-vue": "git+https://github.com/do-community/do-vue.git",
+    "do-vue": "github:do-community/do-vue#MattIPv4/dep-updates",
     "posthtml": "^0.16.6",
     "posthtml-extend": "^0.6.2",
     "sass": "^1.49.9",
