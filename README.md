@@ -6,17 +6,14 @@ Customized Bulma styling for DigitalOcean Community tools.
 
 ## Development/Building
 
-To setup the build/develop environment, you will need to run `npm i` with Node 12+ installed.
-This will install the dependencies to allow you to build the project.
-
-If you wish to build the styles to CSS, simply run `npm run build`.
-This will output `style.css` into `build`.
+To setup the build/develop environment, you will need to having Node.js installed (matching the version specified in
+ `.nvmrc`), and then run `npm ci` to install dependencies (this will respect the lockfile).
 
 We make use of `sass-lint` to maintain code quality in the SCSS files.
-To run this you can use `npm run lint`.
+To run this you can use `npm test`.
 
-To test the project fully, we first run the linter and then build the SCSS to ensure it is valid.
-This is achieved with `npm test`.
+A demo project is included in the `demo` directory, which helps ensure the styles are working as expected.
+This can be run with `demo:dev` to start a server with hot reloading, or `demo:build` to build the demo project.
 
 ## Usage Example
 
@@ -29,7 +26,7 @@ This styling package is being used in the [DigitalOcean Community DNS tools](htt
 ### [`src/components`](./src/components)
 
 This directory contains all the styling components that are available within `.do-bulma`.
- 
+
 ### [`src/globals`](./src/globals)
 
 This directory contains all the styling that is applied to the whole page.
