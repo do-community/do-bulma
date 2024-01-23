@@ -1,5 +1,5 @@
 /*
-Copyright 2022 DigitalOcean
+Copyright 2024 DigitalOcean
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ limitations under the License.
 .landing {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 171px); // Account for Community nav height
+  min-height: calc(100vh - (var(--top-hat-height, 0px) + var(--primary-nav-height, 0px) + var(--sub-nav-height, 0px))); // Account for Community nav height
   position: relative;
 
   .container {
